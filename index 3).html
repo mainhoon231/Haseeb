@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BY HASEEEB</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 50px;
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+
+        video {
+            margin-top: 100px;
+            border: 3px solid red;
+            border-radius: 10px;
+            width: 80%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        video:hover {
+            transform: scale(1.05);
+        }
+
+        .small-text {
+            font-size: 14px;
+            color: white;
+            margin-top: 20px;
+            animation: slideUp 2s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>BY HASEEEB</h1>
+
+    <video controls>
+        <source src="storage_emulated_0_Android_data_com.fawazapp.blackhole_files_DCIM_0382Q5DFMNKONWP643M4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <p class="small-text">RDR2 is the best game ever in the world</p>
+
+</body>
+</html>
