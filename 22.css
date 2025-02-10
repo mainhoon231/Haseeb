@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Chatbot Styles */
+.chatbot {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    background: black;
+    border: 2px solid cyan;
+    box-shadow: 0px 0px 10px cyan;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    animation: popup 0.5s ease-in-out;
+}
+
+@keyframes popup {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.chat-header {
+    background: cyan;
+    padding: 12px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+
+.close-chat {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.chat-body {
+    padding: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.bot-message, .user-message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bot-message {
+    background: rgba(0, 255, 255, 0.3);
+    text-align: left;
+}
+
+.user-message {
+    background: rgba(255, 255, 255, 0.3);
+    text-align: right;
+}
+
+#chat-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: black;
+    color: white;
+    border-top: 2px solid cyan;
+}
+
+.chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: cyan;
+    color: black;
+    border: none;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
